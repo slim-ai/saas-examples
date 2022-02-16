@@ -9,5 +9,5 @@ BDIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 pushd $BDIR
 source _docker-slim.env
 
-docker run -it --rm --security-opt seccomp=unconfined -p 1300:1300 --entrypoint $SHELL_NAME dslimexamples/$IMAGE_NAME
+docker run -it --rm --security-opt seccomp=unconfined -p 3000:3000 --entrypoint $SHELL_NAME dslimexamples/$IMAGE_NAME
 popd
