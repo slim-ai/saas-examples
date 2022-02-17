@@ -14,5 +14,5 @@ if [ -z "$HTTP_PROBE" ]; then
 	HTTP_PROBE=true
 fi
 
-docker-slim build --http-probe=$HTTP_PROBE --include-shell --include-path-file=$INCLUDE_PATH_FILE --include-exe uname dslimexamples/$IMAGE_NAME
+docker-slim build --http-probe=$HTTP_PROBE --include-shell --include-path-file=$INCLUDE_PATH_FILE --include-exe uname slimexamples/$IMAGE_NAME
 popd

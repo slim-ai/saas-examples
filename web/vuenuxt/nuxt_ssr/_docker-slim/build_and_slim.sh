@@ -9,5 +9,5 @@ BDIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 pushd $BDIR
 source _docker-slim.env
 
-docker-slim build --dockerfile Dockerfile --include-path-file=$INCLUDE_PATH_FILE --tag-fat dslimexamples/$IMAGE_NAME .
+docker-slim build --dockerfile Dockerfile --include-path-file=$INCLUDE_PATH_FILE --tag-fat slimexamples/$IMAGE_NAME .
 popd

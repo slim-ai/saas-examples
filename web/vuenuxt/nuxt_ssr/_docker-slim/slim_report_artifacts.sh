@@ -14,5 +14,5 @@ if [ -z "$HTTP_PROBE" ]; then
 	HTTP_PROBE=true
 fi
 
-docker-slim --report $IMAGE_NAME.slim.report.json build --http-probe=$HTTP_PROBE --copy-meta-artifacts . dslimexamples/$IMAGE_NAME
+docker-slim --report $IMAGE_NAME.slim.report.json build --http-probe=$HTTP_PROBE --copy-meta-artifacts . slimexamples/$IMAGE_NAME
 popd

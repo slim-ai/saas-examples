@@ -9,8 +9,8 @@ BDIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 pushd $BDIR
 source _docker-slim.env
 
-docker images | grep dslimexamples/$IMAGE_NAME
-docker rmi dslimexamples/$IMAGE_NAME
-docker rmi dslimexamples/$IMAGE_NAME.slim
+docker images | grep slimexamples/$IMAGE_NAME
+docker rmi slimexamples/$IMAGE_NAME
+docker rmi slimexamples/$IMAGE_NAME.slim
 
 popd

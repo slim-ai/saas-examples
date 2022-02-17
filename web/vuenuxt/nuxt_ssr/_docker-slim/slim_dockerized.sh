@@ -14,5 +14,5 @@ if [ -z "$HTTP_PROBE" ]; then
 	HTTP_PROBE=true
 fi
 
-docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build --include-path-file=$INCLUDE_PATH_FILE --http-probe=$HTTP_PROBE dslimexamples/$IMAGE_NAME
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build --include-path-file=$INCLUDE_PATH_FILE --http-probe=$HTTP_PROBE slimexamples/$IMAGE_NAME
 popd
