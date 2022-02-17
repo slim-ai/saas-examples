@@ -9,7 +9,7 @@ BDIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 pushd $BDIR
 source _docker-slim.env
 
-printf "\ncurl http://localhost:1300/$API_PATH\n"
-curl http://localhost:1300/$API_PATH
+printf "\ncurl http://localhost:3000/$API_PATH\n"
+curl http://localhost:3000/$API_PATH
 printf "\n\n\n"
 popd
