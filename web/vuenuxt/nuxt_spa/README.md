@@ -6,5 +6,5 @@ Optimization is done using docker-slim with added parameter --include-path-file 
 
 ### Slim SaaS
 
-To analyze this image on Slim SaaS portal follow this link: [HERE](https://portal.slim.dev/home/xray/dockerhub%3A%2F%2Fdockerhub.public%2Fslimexamples%2Fserver-nuxtjs-serverside%3Alatest)  
-Image can be found on DockerHub at this link: [HERE](https://hub.docker.com/r/slimexamples/server-nuxtjs-serverside)
+To analyze this image on Slim SaaS portal follow this link: [HERE](https://portal.slim.dev/home/xray/dockerhub%3A%2F%2Fdockerhub.public%2Fslimexamples%2Fserver-nuxtjs-static-spa%3Alatest)  
+Image can be found on DockerHub at this link: [HERE](https://hub.docker.com/r/slimexamples/server-nuxtjs-static-spa)
