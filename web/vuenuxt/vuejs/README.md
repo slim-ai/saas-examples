@@ -23,7 +23,7 @@ To interact with the image you can access it using your browser using http://127
 
 This example shows how to optimize a Nuxt web application using serverside rendering technology with docker-slim, to use an example you can issue a `make build_fat` command to build the initial image. After that use `make slim` command to optimize the image.
 
-Optimization is done using docker-slim with added parameter --include-path-file `docker-slim build --http-probe=true --include-path-file=include-paths slimexamples/`
+Optimization is done using docker-slim with added parameter --include-path-file `docker-slim build --http-probe=true --include-path-file=include-paths slimexamples/server-vuejs`
 
 ### Slim SaaS
 
