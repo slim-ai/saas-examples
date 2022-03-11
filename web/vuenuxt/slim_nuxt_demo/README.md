@@ -1,43 +1,35 @@
-# slim-demo-container
-Slim.AI Tutorial Container - Nuxt-Based
+# About this repository
+Slim.AI Container Optimization Demo - Nuxt
 
-## Project Goal
-Create a demo container that can serve as a tutorial for minification. Should be a relatively common Nuxt pattern that is easy and instructive for users. 
+This demo app and container image is used to demo the Container Optimization feature at [Slim.AI](https://www.slim.ai). 
 
-Key elements: 
-- "Teaching moments" to show users the how and why of minification
-- Guarantee specific outcomes (i.e., working container)
-- Celebrate user minification success
-- Provide users with starting point for future minification needs
-- Use Container Best Practices in Dockerfile, etc
+For more information, please see our [related blog post](https://community.slim.ai/t/slimming-a-containerized-nuxtjs-app-with-slim-ai/84) on the project. 
 
-## To Do's 
-1. Get markdown files rendering in the app
-2. Improve Dockerfile for best practices
-3. Test minification 
-4. Iterate 
+## Instructions 
+To run the application or container locally, clone the git repo to a local directory. 
 
-## Current app
+### Running the app
 ```
--/ 
-|- app 
-|-- assets
-|--- docs //home of Slim How To .md files 
-|-- components
-|--- CodiChamp.vue // new home screen
-|--- MarkdownReader // TODO: component for markdown rendering
-|-- pages 
-|-- static
-|--- images // we add images here that DockerSlim would remove
-Dockerfile 
-README.md //this file
+$ cd /app
+$ npm install
+$ npm run dev 
 ```
 
-Nuxt configuartion:
-- Vuetify
-- Axios
-- SSR
-- NightwatchJS Testing
-- GitHub Actions
- 
- 
+### Building and running the container
+From the project root directory: 
+
+```
+$ docker build -t slim-nuxt-demo . 
+...building..
+$ docker run --rm -p 3000:3000 slim-nuxt-demo
+```
+
+You can also pull a copy of the container from Docker Hub: 
+
+```
+$ docker pull slimexamples/slim-nuxt-demo
+```
+
+The app will be available at `localhost:3000` or `0.0.0.0:3000`. 
+
+To learn more or connect with us, [join our Discord](https://discord.gg/uBttmfyYNB). 

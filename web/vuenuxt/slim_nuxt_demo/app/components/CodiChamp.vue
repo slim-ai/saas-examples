@@ -1,8 +1,8 @@
 <template>
     <v-row no-gutters>
       <v-col>
-        <v-card>
-          <v-img contain max-width="400" src="/images/codi_trophy.png"/>
+        <v-card class="congrats-card">
+          <v-img contain width="700" src="/images/minify_illustration.png"/>
         </v-card>
       </v-col>
     </v-row>
@@ -19,8 +19,10 @@ export default {
   }
 }
 </script>
+
 <style scoped>
-.codi-logo {
-  height: 180px;
+.congrats-card {
+ background:none;
+ box-shadow:none !important;
 }
 </style>

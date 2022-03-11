@@ -6,7 +6,7 @@
           Congratulations on Slimming your first container!
         </v-card-title>
         <v-card-text>
-          <p class="congrats-text">You reduced this container from <strong>900 MB</strong> to <strong>35 MB</strong>! That's amazing! Get access to Slim to start using your new container.</p>
+          <p class="congrats-text">You reduced this container from <strong>1.3 GB</strong> to <strong>318 MB</strong>! That's amazing! Get access to Slim to start using your new container.</p>
           
         </v-card-text>
         <v-card-actions>
@@ -119,6 +119,7 @@ export default {
 .congrats-card {
  background:none;
  box-shadow:none !important;
+ background-color: #1F6BF1 !important;
 }
 
 .congrats-text-wrap{
@@ -145,7 +146,7 @@ export default {
 }
 
 .congrats-row {
-  background: #1F6BF1;
+  background: #1F6BF1 !important;
   position:absolute;
   height:100%;
   overflow:hidden;
@@ -165,6 +166,8 @@ export default {
   padding:30px 40px !important;
   font-size:1rem;
 }
+
+
 
 @media (min-width: 1264px)
 .container {
