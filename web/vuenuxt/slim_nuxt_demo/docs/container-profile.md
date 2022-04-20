@@ -12,7 +12,7 @@ Before deep diving into your container internals, you'll find a profile screen t
 
 ### Available Versions
 
-![](../../static/blog//docs_container_diff_avail_versions.png)
+![](app/static/blog//docs_container_diff_avail_versions.png)
 
 The available versions screen provides you with information and options for each tag in an image repository. As a reminder, an image tag is synonymous with a "version tag" and notes, most commonly, an updated or alternate version of the image.
 
@@ -26,7 +26,7 @@ The available versions screen provides you with information and options for each
 
 Choosing to view a version of the image will run the Slim scanning tools on that image. This process may take a short time as we build and assess the container image.
 
-![](../../static/blog//docs_profiles_scanning.png)
+![](app/static/blog//docs_profiles_scanning.png)
 
 Results from the scan are found on the container image detail screen.
 
@@ -70,7 +70,7 @@ Knowing which files are created in each layer gives you a basic understanding of
 
 Clicking a file will open metadata about that file. For text files, you can also click the **File Contents** tab to see the plain text contents of any file in your container.
 
-![](../../static/blog//qs_explorer_filecontentstab_lg.png)
+![](app/static/blog//qs_explorer_filecontentstab_lg.png)
 
 ### **Layers**
 
@@ -78,7 +78,7 @@ Layers are listed in pills across the top of the tab, allowing you to quickly se
 
 ### **Instruction**
 
-![](../../static/blog//fileexplorer-instructions.png)
+![](app/static/blog//fileexplorer-instructions.png)
 
 Instruction panel provides a view of the container build process that shows which instructions in the Dockerfile created which layers and files. This is useful for understanding which commands created which layers when debugging a Dockerfile.
 
@@ -88,4 +88,4 @@ The panel also containers the container startup files (often entrypoints or comm
 
 As a final step, the Slim Developer Platform will provide you with a generated Dockerfile. This generated Dockerfile is provided to for context only. In most cases, it cannot be used to create a valid profile image. It can, however, help you better understand how the image is constructed by showing various INSTRUCTIONS that determine how layers are created.
 
-![](../../static/blog//dockerfile_view.png)
+![](app/static/blog//dockerfile_view.png)

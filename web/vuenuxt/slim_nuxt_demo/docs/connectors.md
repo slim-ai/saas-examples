@@ -23,7 +23,7 @@ Instructions for how to connect to a specific registry are provided on the regis
 
 Once the connection is successfully established, you'll find images from your connected registeries in the `Connected Registies` tab on the product homepage. 
 
-![product homepage - connected registries tab selected](../../static/blog//docs_connected_registries_homepage.png)
+![product homepage - connected registries tab selected](app/static/blog//docs_connected_registries_homepage.png)
 
 ## Finding images from connected registries 
 Once connected and authenticated, images will appear in two places in the Slim Developer Platform. 
@@ -44,7 +44,7 @@ Clicking the down arrown (:arrow_down_small:) will open a parent folder exposing
 ### Search 
 Images from connected registries will also appear if relevant to a search query. For instance, if you have an Image Repository with the keyword term `python` in it, performing a search on `python` will return that image repository. 
 
-![search UI highlighting private library images](../../static/blog//docs_connectors_search.png)
+![search UI highlighting private library images](app/static/blog//docs_connectors_search.png)
 
 <figcaption>Example of search results returning images from both public and connected registries.</figcaption>
 

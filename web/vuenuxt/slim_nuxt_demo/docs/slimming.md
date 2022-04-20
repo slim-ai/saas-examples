@@ -14,7 +14,7 @@ This tutorial introduces the basic concepts of what we mean by **container slimm
 
 > Simply making the container smaller is one of the benefits of slimming, but not the core objective.
 
-![](../../static/blog//slim_vs_compressed_final-1.png)
+![](app/static/blog//slim_vs_compressed_final-1.png)
 
 **What it is:** Container Slimming at the highest level can be thought of as "making your containerized application ready for production." It's an optimization process that can be done in one of many ways (or many of many ways) to achieve the following objectives:
 
