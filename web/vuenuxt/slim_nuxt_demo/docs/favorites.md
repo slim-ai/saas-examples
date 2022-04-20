@@ -1,13 +1,3 @@
----
-title: Favorites
-date: 2021-07-13T00:00:00.000+00:00
-summary: ''
-bannerimage: ''
-tags: []
-videoUrl: https://www.youtube.com/embed/8nuh5-DRngI
-sidebar: false
-
----
 # Favorites
 Managing containers and containerized workflows is no easy job. The Slim Developer Platform’s Collections feature is designed to make it easier to share, store, and track container images and artifacts for individuals and teams.
 

@@ -1,20 +1,3 @@
----
-title: Getting Started
-description: Learn how to use @nuxt/content.
-
----
-<!-- ---
-title: Getting Started
-summary: ''
-date: 2021-06-21T00:00:00.000+00:00
-bannerimage: ''
-tags: []
-videoUrl: https://www.youtube.com/embed/ZcwHDquq860
-sidebar: false
-
---- -->
-
-
 # Getting Started
 
 Need to choose the right Docker container for a new project but don’t know where to start? Want to see how your container is built and see what lives inside it? Wondering _how_ you can effectively achieve [container best practices](https://www.slim.ai/blog/why-don%E2%80%99t-we-practice-container-best-practices.html)?

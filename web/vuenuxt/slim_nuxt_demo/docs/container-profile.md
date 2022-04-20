@@ -1,12 +1,3 @@
----
-title: Container Profiles
-summary: ''
-date: 2021-06-21T00:00:00.000+00:00
-bannerimage: ''
-tags: []
-sidebar: false
-
----
 # Container Profiles
 
 With Slim.AI, you can get detailed analysis of both public and private container images using our suite of container development tools.

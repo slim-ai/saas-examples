@@ -1,14 +1,3 @@
----
-title: Connectors
-summary: ''
-date: 2021-06-21 00:00:00 +0000
-bannerimage: ''
-tags: []
-videoUrl: https://www.youtube.com/embed/8nuh5-DRngI
-sidebar: false
-label: "Give Feedback" 
----
-
 # Connectors
 
 **Analyzing and optimizing your own images**

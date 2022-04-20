@@ -1,13 +1,3 @@
----
-title: Container Slimming 101
-summary: ''
-date: 2021-06-21T00:00:00.000+00:00
-bannerimage: ''
-tags: []
-videoUrl: https://www.youtube.com/embed/8nuh5-DRngI
-sidebar: false
-
----
 # Container Slimming 101
 
 **The how, what, and why of making smaller, safer, more performant containers.**

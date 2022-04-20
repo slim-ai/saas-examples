@@ -1,13 +1,3 @@
----
-title: Container Diff
-summary: ''
-date: 2021-06-21T00:00:00.000+00:00
-bannerimage: ''
-tags: []
-videoUrl: ''
-sidebar: false
-
----
 # Container Diff
 
 **Comparing changes between your container versions**
