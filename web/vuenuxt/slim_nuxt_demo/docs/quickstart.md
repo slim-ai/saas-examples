@@ -56,7 +56,7 @@ In the menu on the right-hand side of each you, you'll find a menu with links to
 
 **Compare Versions -** This option allows you to choose two versions of the same image and compare them using our [**Diff**](./container-diff.md) feature. If available, you may find the Alpine Linux version or any maintainer supported “slim” versions that have already been optimized by the maintainers. These images may be more appropriate to your use case, but keep in mind that starting with a bare-bones image may cause headaches later in development.
 
-![compare versions dropdown](../../static/blog/compare-versions.png "Diff two container versions")
+![compare versions dropdown](../app/static/blog/compare-versions.png)
 
 Now that you have the basics of container analysis down, you can take a deeper look at our core feature set, such as [**Profiles**](./container-profile.md), [**Connectors**](./connectors.md), [**Container Diff**](./container-diff.md), and [**Favorites**](./favorites.md)**.**
 
