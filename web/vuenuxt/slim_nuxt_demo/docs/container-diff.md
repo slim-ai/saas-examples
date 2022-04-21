@@ -34,17 +34,17 @@ To do so, find the image you want to compare and visit it's profile page. Click 
 
 From the UI, select a second image to compare to. You can choose from any public registry or even from your own private connections.
 
-![UI for comparing different images(../app/static/blog//docs_diff_compare_images.png)
+![UI for comparing different images](../app/static/blog/docs_diff_compare_images.png)
 
 ### Comparing Private Images
 
-If you have [**Connectors**](https://www.slim.ai/docs/connectors.html) set up to import container images from your own public or private registries (i.e., Docker Hub, AWS ECR, GCR, etc), you can compare those versions or images the same way you would public images. Simply navigate to the container image profile screen and click the `Compare` icon on one of the versions you'd like to diff. 
+If you have [**Connectors**](./connectors.md) set up to import container images from your own public or private registries (i.e., Docker Hub, AWS ECR, GCR, etc), you can compare those versions or images the same way you would public images. Simply navigate to the container image profile screen and click the `Compare` icon on one of the versions you'd like to diff. 
 
 ## Understanding the Diff
 
 Once the images are analyzed, you'll be brought to the comparison screen where you can access various comparisons of the two images. 
 
-![](../app/static/blog//docs_container-diff_comparison_screen.png)
+![](../app/static/blog/docs_container-diff_comparison_screen.png)
 
 ### File System Diff
 
@@ -52,7 +52,7 @@ In the first tab, you'll find a file-by-file comparison showing any **added, del
 
 Clicking on any indvidual file will provide metadata about that file. If the file is a `TEXT` file, you can even see a GitHub-like diff of any modifications. 
 
-![file contents diff for Rust image](../app/static/blog//docs_diff_filecontents.png)  
+![file contents diff for Rust image](../app/static/blog/docs_diff_filecontents.png)  
 _Modified text files can be examined directly to see changes._ 
 
 ### Image Metadata Diff
