@@ -14,5 +14,5 @@ if [ -z "$HTTP_PROBE" ]; then
 	HTTP_PROBE=true
 fi
 
-docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build --include-app-nuxt-build-dir --include-app-nuxt-static-dir --include-app-nuxt-nodemodules-dir --http-probe=$HTTP_PROBE slimexamples/$IMAGE_NAME
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build --include-app-nuxt-static-dir --http-probe=$HTTP_PROBE slimexamples/$IMAGE_NAME
 popd

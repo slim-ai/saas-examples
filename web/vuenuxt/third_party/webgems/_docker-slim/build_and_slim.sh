@@ -9,5 +9,5 @@ BDIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 pushd $BDIR
 source _docker-slim.env
 
-docker-slim build --dockerfile service/Dockerfile --include-app-nuxt-build-dir --include-app-nuxt-static-dir --include-app-nuxt-nodemodules-dir --tag-fat slimexamples/$IMAGE_NAME .
+docker-slim build --dockerfile app/Dockerfile --include-app-nuxt-static-dir --tag-fat slimexamples/$IMAGE_NAME .
 popd

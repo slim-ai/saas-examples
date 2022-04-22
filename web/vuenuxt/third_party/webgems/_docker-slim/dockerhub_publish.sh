@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 set -e
 
 SOURCE="${BASH_SOURCE[0]}"
