@@ -5,6 +5,14 @@ This demo app and container image is used to demo the Container Optimization fea
 
 For more information, please see our [related blog post](https://community.slim.ai/t/slimming-a-containerized-nuxtjs-app-with-slim-ai/84) on the project. 
 
+## Docs
+- [Quickstart](docs/quickstart.md)
+- [Connectors](docs/connectors.md)
+- [Container diff](docs/container-diff.md)
+- [Container profile](docs/container-profile.md)
+- [Slimming](docs/slimming.md)
+- [Favorites](docs/favorites.md)
+
 ## Instructions 
 To run the application or container locally, clone the git repo to a local directory. 
 
