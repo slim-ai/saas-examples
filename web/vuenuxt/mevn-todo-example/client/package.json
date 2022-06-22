@@ -1,0 +1,31 @@
+{
+  "name": "nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "devx": "nuxt --hostname 0.0.0.0",
+    "build": "nuxt build",
+    "buildx": "nuxt build --standalone",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "prettier-check": "prettier --check --debug-check ./**/*.{js,vue}",
+    "prettier-format": "prettier --write --list-different ./**/*.{js,vue}"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/toast": "^3.3.1",
+    "nuxt": "^2.14.0",
+    "nuxt-oauth": "^2.8.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0"
+  }
+}
