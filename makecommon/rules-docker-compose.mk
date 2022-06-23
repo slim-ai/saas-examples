@@ -35,14 +35,6 @@ dep-run:
 slim-build: EXPECTED_IMAGE_NAME=slimexamples/${IMAGE_NAME}.slim
 slim-build: EXPECTED_IMAGE_SIZE=${EXPECTED_IMAGE_SIZE_SLIM_${ARCH}}
 slim-build:
-	@echo "${GREEN}Building Slim Image${RESET}"
-	docker-slim ${DSLIM_EXTRA_FLAGS} build ${DSLIM_BUILD_EXTRA_FLAGS} slimexamples/${IMAGE_NAME}
-	$(assert_image_size)
-
-.PHONY:
-slim-build-compose: EXPECTED_IMAGE_NAME=slimexamples/${IMAGE_NAME}.slim
-slim-build-compose: EXPECTED_IMAGE_SIZE=${EXPECTED_IMAGE_SIZE_SLIM_${ARCH}}
-slim-build-compose:
 	@echo "${GREEN}Building Slim Image From Compose File${RESET}"
 	docker-slim ${DSLIM_EXTRA_FLAGS} build ${DSLIM_BUILD_EXTRA_FLAGS} --target-compose-svc ${COMPOSE_TARGET_SVC} --compose-file ${COMPOSE_FILE_FAT}
 	$(assert_image_size)
