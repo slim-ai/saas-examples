@@ -29,6 +29,6 @@ To run this image you can execute `make fat-run` or `docker run -p 80:80 {image 
 
 To interact with the image you can access it using your browser using http://127.0.0.1:80, if you are running this container on another device then you are trying to access it, you need to replace 127.0.0.1 with ip or web address of other device
 
-This example shows how to optimize a Nuxt web application using serverside rendering technology with docker-slim, to use an example you can issue a `make fat-build` command to build the initial image. After that use `make slim-build` command to optimize the image.
+This example shows how to optimize a Mevn application using docker-compose with docker-slim, to use an example you can issue a `make fat-build` command to build the initial image. After that use `make slim-build` command to optimize the image.
 
 Optimization is done using docker-slim with added parameter --include-path `docker-slim  build --include-path="/app/nuxt_modules" --target-compose-svc vue_client --compose-file /home/bigpod/movetosaasreal/saas-examples/web/vuenuxt/mevn-todo-example/docker-compose.yaml`
