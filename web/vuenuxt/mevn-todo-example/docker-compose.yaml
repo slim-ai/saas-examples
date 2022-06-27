@@ -1,0 +1,36 @@
+version: '3'
+services:
+  node_server:
+    image: slimexamples/mevn-todo-example-app-api:test
+    build: ./server
+    depends_on:
+      - mongo
+    environment:
+      - DB_URL=mongodb://mongo:27017/tododb
+    ports:
+      - '9000:9000'
+  vue_client:
+    image: slimexamples/mevn-todo-example-app-client:latest
+    build: ./client
+    depends_on:
+      - node_server
+    ports:
+      - '3000:3000'
+  reverse-proxy:
+    image: slimexamples/mevn-todo-example-app-reverse-proxy:latest
+    build: ./reverse_proxy
+    container_name: reverse_proxy
+    depends_on:
+      - vue_client
+      - node_server
+    ports:
+      - 80:80
+  mongo:
+    image: mongo
+    volumes:
+    - mongo-data:/data/db
+    ports:
+      - '27017:27017'
+
+volumes:
+  mongo-data:
