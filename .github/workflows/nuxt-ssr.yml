@@ -4,9 +4,9 @@ name: nuxt-ssr
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "bigpod-github-action-testing" ]
+    branches: [ "bigpod-github-actions" ]
   pull_request:
-    branches: [ "bigpod-github-action-testing" ]
+    branches: [ "bigpod-github-actions" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: ./.github/
+      - uses: ./.github/actions/
         with:
           API_TOKEN: ${{ secrets.API_TOKEN }}
           API_PARAMS_LOCATION: ./web/vuenuxt/nuxt_ssr/nuxt_ssr_api_params.json
