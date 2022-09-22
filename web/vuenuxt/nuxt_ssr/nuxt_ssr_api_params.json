@@ -1,0 +1,57 @@
+{
+  "config": {
+    "type": "data",
+    "save": true,
+    "data": {
+      "name": "custom config",
+      "command": "build",
+      "params": [
+        {
+          "type": "target",
+          "reference": {
+            "type": "container.image",
+            "store": {
+              "type": "connector",
+              "connector": "rkcn.2F8AK1aNxa5qbYGZ9yIZ5iGjC8a"
+            },
+            "attributes": {
+              "namespace": "slimexamples",
+              "repo": "server-nuxtjs-serverside",
+              "version": "latest"
+            }
+          }
+        },
+        {
+          "type": "output",
+          "reference": {
+            "type": "container.image",
+            "store": {
+              "type": "connector",
+              "connector": "generic.object.store"
+            },
+            "attributes": {
+              "namespace": "slimexamples",
+              "repo": "server-nuxtjs-serverside",
+              "version": "latest-slim"
+            }
+          }
+        },
+        {
+          "type": "flag",
+          "name": "expose",
+          "value": "3000/tcp"
+        },
+        {
+          "type": "flag",
+          "name": "include-path",
+          "value": "/app/.nuxt"
+        },
+        {
+          "type": "flag",
+          "name": "include-path",
+          "value": "/app/node_modules"
+        }
+      ]
+    }
+  }
+}

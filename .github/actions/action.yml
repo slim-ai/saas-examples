@@ -1,0 +1,67 @@
+name: 'slimwithsaas'
+description: ''
+inputs:
+  API_TOKEN:
+    description: 'API_TOKEN'
+    required: true
+  API_DOMAIN:
+    description: 'API_DOMAIN'
+    required: false
+    default: platform.slim.dev
+  API_PARAMS_LOCATION:
+    description: 'API_PARAMS_LOCATION'
+    required: true
+  ORG_ID:
+    description: 'ORG_ID'
+    required: true
+  CONNECTOR_ID:
+    description: 'API_TOKEN'
+    required: true
+  TARGET_IMAGE_TAG:
+    description: 'API_TOKEN'
+    required: true
+  TARGET_IMAGE_NAME:
+    description: 'API_TOKEN'
+    required: true
+  TARGET_IMAGE_NAMESPACE:
+    description: 'API_TOKEN'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: sudo apt update && sudo apt install -y jq curl
+      shell: bash
+    - run: |
+        CONNECTOR="\"connector\": \"$(jq '.config.data.params[1].reference.store.connector' -r $API_PARAMS_LOCATION)\""
+        TARGETNS="\"namespace\": \"$(jq '.config.data.params[1].reference.attributes.namespace' -r $API_PARAMS_LOCATION)\""
+        TARGETTAG="\"version\": \"$(jq '.config.data.params[1].reference.attributes.version' -r $API_PARAMS_LOCATION)\""
+        TARGETNAME="\"repo\": \"$(jq '.config.data.params[1].reference.attributes.repo' -r $API_PARAMS_LOCATION)\""
+        sed -i "s/$CONNECTOR/\"connector\": \"$CONNECTOR_ID\"/g" $API_PARAMS_LOCATION
+        sed -i "s/$TARGETNS/\"namespace\": \"$TARGET_IMAGE_NAMESPACE\"/g" $API_PARAMS_LOCATION
+        sed -i "s/$TARGETTAG/\"version\": \"$TARGET_IMAGE_TAG\"/g" $API_PARAMS_LOCATION
+        sed -i "s/$TARGETNAME/\"repo\": \"$TARGET_IMAGE_NAME\"/g" $API_PARAMS_LOCATION
+      shell: bash
+    - run: | 
+        OUTPUT=$(curl --request POST https://$API_DOMAIN/orgs/${ORG_ID}/engine/executions -u "api.token:$API_TOKEN" -d @${API_PARAMS_LOCATION})
+        echo $OUTPUT
+        ID=$(echo $OUTPUT | jq '.id' -r)
+      shell: bash
+    - run: |
+        while true 
+        do 
+            OUTPUT=$(curl https://platform.slim.dev/orgs/rko.2EAZcKMZKx1WtTi8efqmgczv9R3/engine/executions/$1 -u "api.token:$2")
+            STATE=$(echo $OUTPUT | jq '.state' -r)
+            echo $STATE
+            if [[ $STATE == "completed" ]]
+            then
+              break
+            fi
+
+            if [[ $STATE == "failed" ]]
+            then
+              exit 1
+            fi
+            sleep 5
+        done
+      shell: bash
+
